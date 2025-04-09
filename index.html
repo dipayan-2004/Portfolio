@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/utility.css">
     <link rel="stylesheet" href="./css/responcive.css">
-    
+
     <style>
         * {
             margin: 0;
@@ -23,7 +23,8 @@
 
         }
 
-        * a,li {
+        * a,
+        li {
             text-decoration: none;
             list-style-type: none;
             display: inline-block;
@@ -43,14 +44,21 @@
             align-items: center;
             height: 70px;
         }
-        #name{
+
+        #name {
             font-style: oblique;
             font-size: 30px;
             font-weight: 200;
-            
+
         }
 
-        
+        main .hr {
+            height: 1px;
+            background-color: #a9a5a5c7;
+            width: 90%;
+            margin: auto;
+            margin-top: -25px;
+        }
     </style>
 </head>
 
@@ -59,7 +67,7 @@
 
         <div class="nav flex_row sp_even">
             <div class="logo flex_col">
-                <span class:="para1" style="font-size: 1.5em">Its Dipayan</span>
+                <span class:="para1" style="font-size: 1.5em">It's Dipayan</span>
                 <span class=" para2">Fontend Developer</span>
             </div>
 
@@ -77,27 +85,25 @@
         <div id="section1">
             <img src="./images/dp.png">
             <p class="intro">Hii developers this is<span id="name">Dipayan</span><br>
-                    I am a <span id="typedjs"></span>
+                I am a <span id="typedjs"></span>
             </p>
         </div>
-            
-            
-            
-       
+        <div class="hr"></div>
+        <div class="section1"></div>
     </main>
 
-  
 
-  <!-- Load library from the CDN -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-  <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#typedjs', {
-      strings: ['Wordpress Developer ||', 'Frontend Developer ||'],
-      typeSpeed: 60,
-    });
-  </script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#typedjs', {
+            strings: ['Wordpress Developer ||', 'Frontend Developer ||'],
+            typeSpeed: 60,
+        });
+    </script>
 </body>
 </body>
 
