@@ -1,0 +1,35 @@
+ /*..............flexbox...............*/
+ .flex_row{
+    display: flex;
+}
+.flex_col{
+    display: flex;
+    flex-direction: column;
+}
+.sp_even{
+    justify-content: space-evenly;
+}
+.sp_between{
+    justify-content: space-between;
+}
+.sp_arr{
+    justify-content: space-around;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+/*.......... position property.......*/
+.abs{
+    position: absolute;
+}
+.rel{
+    position: relative;
+}
+
+/*............grid property......*/
+
+.grid{
+    display: grid;
+}

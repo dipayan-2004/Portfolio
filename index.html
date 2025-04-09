@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Dipayan || Freelance Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/utility.css">
+    <link rel="stylesheet" href="/css/responcive.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins";
+            color: white;
+
+        }
+
+        * a,
+        li {
+            text-decoration: none;
+            list-style-type: none;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        body {
+            background-color: rgb(0, 0, 70);
+        }
+
+        a:hover {
+            transform: scale(1.1);
+        }
+
+        .nav {
+            background-color: rgb(3 3 103);
+            align-items: center;
+            height: 70px;
+        }
+
+        @media (min-width:768px) {
+            .logo {
+                margin: auto;
+            }
+
+            .logo>span {
+                font-size: 1rem;
+            }
+
+            .para1 {
+                font-size: 0.8em;
+                color: rgb(165, 166, 167);
+            }
+
+            .nav-items {
+                width: 80%;
+                justify-content: flex-end;
+            }
+
+            .nav-items>ul {
+                justify-content: space-evenly;
+                width: 30%;
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="nav flex_row sp_even">
+            <div class="logo flex_col">
+                <span>Its Dipayan</span>
+                <span class="para1">Fontend Developer</span>
+            </div>
+
+            <div class="nav-items flex_row">
+                <ul class="flex_row space-between">
+                    <li class="nav_ul_items"><a href="#">Home</a></li>
+                    <li class="nav_ul_items"><a href="#">About Us</a></li>
+                    <li class="nav_ul_items"><a href="#">Projects</a></li>
+                    <li class="nav_ul_items"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- <main>
+        <section1>
+            <div class="flex_row  sp_arround ">
+                <p>hii this is <span class="hover-zoom">Dipayan</span><br>
+                    i am a frontend developper....
+                </p>
+                <img src="./dev.png">
+            </div>
+            
+            
+        </section1>
+    </main> -->
+</body>
+
+</html>
