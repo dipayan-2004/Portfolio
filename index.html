@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/css/utility.css">
     <link rel="stylesheet" href="/css/responcive.css">
+    
     <style>
         * {
             margin: 0;
@@ -43,33 +44,14 @@
             align-items: center;
             height: 70px;
         }
-
-
-        @media (min-width:768px) {
-            .logo {
-                margin: auto;
-            }
-
-            .logo>.para1 {
-                font-size: 1rem;
-            }
-
-            .para2 {
-                font-size: 0.9em;
-                color: rgb(165, 166, 167);
-            }
-
-            .nav-items {
-                width: 80%;
-                justify-content: flex-end;
-            }
-
-            .nav-items>ul {
-                justify-content: space-evenly;
-                width: 30%;
-                font-size: 1.2em;
-            }
+        #name{
+            font-style: oblique;
+            font-size: 30px;
+            font-weight: 200;
+            
         }
+
+        
     </style>
 </head>
 
@@ -92,18 +74,32 @@
             </div>
         </div>
     </header>
-    <!-- <main>
-        <section1>
-            <div class="flex_row  sp_arround ">
-                <p>hii this is <span class="hover-zoom">Dipayan</span><br>
-                    i am a frontend developper....
-                </p>
-                <img src="./dev.png">
-            </div>
+    <main>
+        <div id="section1">
+            <img src="./images/dp.png">
+            <p class="intro">Hii developers this is<span id="name">Dipayan</span><br>
+                    I am a <span id="typedjs"></span>
+            </p>
+        </div>
             
             
-        </section1>
-    </main> -->
+            
+       
+    </main>
+
+  
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#typedjs', {
+      strings: ['Wordpress Developer ||', 'Frontend Developer ||'],
+      typeSpeed: 60,
+    });
+  </script>
+</body>
 </body>
 
 </html>
