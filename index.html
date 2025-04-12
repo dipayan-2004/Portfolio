@@ -10,56 +10,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/utility.css">
     <link rel="stylesheet" href="./css/responcive.css">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "poppins";
-            color: white;
-
-        }
-
-        * a,
-        li {
-            text-decoration: none;
-            list-style-type: none;
-            display: inline-block;
-            transition: transform 0.3s ease;
-        }
-
-        body {
-            background-color: rgb(0, 0, 70);
-        }
-
-        a:hover {
-            transform: scale(1.1);
-        }
-
-        .nav {
-            background-color: rgb(3 3 103);
-            align-items: center;
-            height: 70px;
-        }
-
-        #name {
-            font-style: oblique;
-            font-size: 30px;
-            font-weight: 200;
-
-        }
-
-        main .hr {
-            height: 1px;
-            background-color: #a9a5a5c7;
-            width: 90%;
-            margin: auto;
-            margin-top: -25px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/stylesheet.css">
 </head>
 
 <body>
@@ -89,9 +45,45 @@
             </p>
         </div>
         <div class="hr"></div>
-        <div class="section1"></div>
-    </main>
+        <div id="section2"></div>
+        <div id="contact" class=" flex_row center">
+            <div class="container flex_col">
+                <span>Name:</span>
+                <input type="text" placeholder="E.g Ankur Roy" required>
+                <span>Email:</span>
+                <input type="email" placeholder="E.g ankur@gmail.com" required>
+                <span>Contact No:</span>
+                <input type="number" placeholder="E.g xxxxx647">
+                <span>Your Feedback</span>
+                <textarea placeholder="Write your feedback here..." style="height:200px" required></textarea>
 
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <div class="footer_section">
+                <div class="footer_box info">
+                    <img src="./images/dp.png" alt="">
+                    <div class="footer_icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer_box">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur ipsam quod provident
+                    assumenda fugiat laboriosam delectus, consectetur sed sapiente ducimus impedit deleniti repellendus,
+                    us fuga magnam sed maxime dicta atque
+                    deserunt quaerat, adipisci ex molestias consequuntur, qui nulla dolore! Similique, ut voluptates!
+                </div>
+            </div>
+            <div class="hr_footer"></div>
+            <p><i class="fa-solid fa-copyright"></i> under copyright 2025 @dipayandey</p>
+        </div>
+    </footer>
 
 
     <!-- Load library from the CDN -->

@@ -124,3 +124,39 @@
         font-size: 3rem;
     }
 }
+/* --------------contact portion--------------- */
+@media (max-width:768px) {
+    .container{
+        height: auto;
+        width:300px;
+    }
+
+}
+
+@media (min-width:768px) {
+    .container{
+        height: auto;
+        width: 50%;
+    }
+}
+
+
+/* ---------footer portion-------- */
+@media (max-width:768px) {
+    footer{
+        padding-top: 50px;
+    }
+    .footer_section{
+        flex-direction: column-reverse;
+    }
+    .footer_section .info{
+        padding-top: 55px;
+    }
+
+}
+
+@media (min-width:768px) {
+    footer{
+         padding-top: 100px;
+    }
+}

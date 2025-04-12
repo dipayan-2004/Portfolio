@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    color: white;
+
+}
+
+* a,
+li {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+body {
+    background-color: rgb(30 30 158);
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+.nav {
+    background-color: rgb(7 7 33);
+    align-items: center;
+    height: 70px;
+}
+
+#name {
+    font-style: oblique;
+    font-size: 30px;
+    font-weight: 200;
+
+}
+
+main .hr {
+    height: 1px;
+    background-color: #a9a5a5c7;
+    width: 90%;
+    margin: auto;
+    margin-top: -25px;
+}
+
+#section1 {
+    background: linear-gradient(to bottom, rgb(5, 5, 27),rgb(5, 5, 27), transparent);
+    margin: 0;
+    padding: 100px 0px;
+}
+
+#section1 img:hover {
+    transition: transform 1s ease;
+    transform: scale(1.04);
+}
+
+#section1 img {
+    transition: transform 1s ease-out;
+    /*this is for reverse transition*/
+}
+
+.nav-items li a {
+    position: relative;
+}
+
+.nav-items li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.nav-items li a:hover::after {
+    width: 100%;
+}
+
+
+/* -----------------contact section-------------- */
+#contact{
+    padding: 5rem 0rem;
+}
+#contact .container span{
+    padding: 6px;
+}
+input,textarea{
+    background-color: #0e113538;
+    border-radius: 4px;
+    border: 1px solid #151538;
+    height: 40px;
+}
+input::placeholder,textarea::placeholder{
+    color: rgba(255, 255, 255, 0.216);
+    padding-left: 10px;
+}
+
+ /* ---this is for removing up and down btn from input field-- */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* -----------footer section----- */
+
+footer{
+    height: max-content;
+    width: 100%;
+    background-color: rgb(29 29 31);
+   
+}
+
+.footer_section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer_box{
+    height: 300px;
+    width: 300px;
+   
+    display: flex;
+    flex-direction: column;
+
+}
+.footer_box img{
+    position: relative;
+    left:15px;
+}
+.footer_box:first-child img{
+    height: 100px;
+    width: 100px;
+}
+.footer_icons a{
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.hr_footer {
+    height: 1px;
+    width: 90%;
+    background-color: #7a7878;
+    margin: auto;
+}
+footer p {
+    text-align: center;
+    font-size: 0.61rem;
+    padding: 10px;
+}
