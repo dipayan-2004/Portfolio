@@ -10,7 +10,7 @@
 }
 
 
-@media (max-width:768px) {
+@media (max-width:769px) {
     .nav {
 
         display: flex;
@@ -54,7 +54,7 @@
 
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
     .logo {
         margin: auto;
     }
@@ -82,7 +82,7 @@
 
 /* ................section1 portion........... */
 
-@media (max-width:768px) {
+@media (max-width:769px) {
     img {
         height: 300px;
         width: 300px;
@@ -108,7 +108,7 @@
 
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
     #section1{
         margin: 100px 0px;
         display: flex;
@@ -125,7 +125,7 @@
     }
 }
 /* --------------contact portion--------------- */
-@media (max-width:768px) {
+@media (max-width:769px) {
     .container .input_grp input{
         /* height: auto; */
         width:300px;
@@ -134,9 +134,16 @@
     .container .input_grp textarea{
         width: 300px;
     }
+    #contact{
+        flex-direction: column-reverse;
+    }
+    #contact img{
+       
+        aspect-ratio: 1/1;
+    }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
     .container .input_grp input{
         /* height: auto; */
         width: 30vw;
@@ -145,11 +152,16 @@
     .container .input_grp textarea{
         width: 30vw;
     }
+    #contact img{
+        margin-left:12rem;
+        height: 23rem;
+        aspect-ratio: 1/1;
+    }
 }
 
 
 /* ---------footer portion-------- */
-@media (max-width:768px) {
+@media (max-width:769px) {
     footer{
         padding-top: 50px;
     }
@@ -162,7 +174,7 @@
 
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
     footer{
          padding-top: 100px;
     }

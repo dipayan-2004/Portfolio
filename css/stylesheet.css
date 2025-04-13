@@ -6,9 +6,10 @@
     color: white;
 
 }
-
-* a,
-li {
+html{
+    scroll-behavior: smooth;
+}
+* a,li {
     text-decoration: none;
     list-style-type: none;
     display: inline-block;
@@ -112,9 +113,11 @@ input,textarea{
     height: 40px; 
     outline: none;
 }
-input::placeholder,textarea::placeholder{
-    color: rgba(255, 255, 255, 0.216);
-    padding-left: 10px;
+input{
+    padding-left: 12px;
+}
+textarea{
+    padding: 12px 12px;
 }
 
  /* ---this is for removing up and down btn from input field-- */
