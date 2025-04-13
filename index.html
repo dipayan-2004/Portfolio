@@ -48,14 +48,25 @@
         <div id="section2"></div>
         <div id="contact" class=" flex_row center">
             <div class="container flex_col">
-                <span>Name:</span>
-                <input type="text" placeholder="E.g Ankur Roy" required>
-                <span>Email:</span>
-                <input type="email" placeholder="E.g ankur@gmail.com" required>
-                <span>Contact No:</span>
-                <input type="number" placeholder="E.g xxxxx647">
-                <span>Your Feedback</span>
-                <textarea placeholder="Write your feedback here..." style="height:200px" required></textarea>
+                <div class="input_grp  rel">
+                    <input type="text" id="Name" class="Name" placeholder="" required>
+                    <label for="Name">Name:</label>
+                </div>
+                <div class="input_grp rel">
+                    <input type="email" id="email" class="email" required>
+                    <label for="email">Email:</label>
+                </div>
+                <div class="input_grp rel">
+                    <input type="tel" id="phone" class="phone" required>
+                    <label for="phone">Contact No:</label>
+
+                </div>
+                <div class="input_grp rel">
+                    <textarea style="height:200px" required></textarea>
+                    <label>Your Feedback</label>
+
+                </div>
+                
 
             </div>
         </div>

@@ -84,14 +84,33 @@ main .hr {
 #contact{
     padding: 5rem 0rem;
 }
-#contact .container span{
+.input_grp{
+    padding: 5px 0px;
+}
+#contact .input_grp label{
+    color: #bab5b5;
+    font-size: 13px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
     padding: 6px;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+input:focus ~ label,
+input:valid ~ label  {
+    transform: translateY(-65%);
+}
+textarea:focus ~ label,
+textarea:valid ~ label  {
+    transform: translateY(-65%);
 }
 input,textarea{
     background-color: #0e113538;
     border-radius: 4px;
     border: 1px solid #151538;
-    height: 40px;
+    height: 40px; 
+    outline: none;
 }
 input::placeholder,textarea::placeholder{
     color: rgba(255, 255, 255, 0.216);

@@ -126,17 +126,24 @@
 }
 /* --------------contact portion--------------- */
 @media (max-width:768px) {
-    .container{
-        height: auto;
+    .container .input_grp input{
+        /* height: auto; */
         width:300px;
+        outline: none;
     }
-
+    .container .input_grp textarea{
+        width: 300px;
+    }
 }
 
 @media (min-width:768px) {
-    .container{
-        height: auto;
-        width: 50%;
+    .container .input_grp input{
+        /* height: auto; */
+        width: 30vw;
+        outline: none;
+    }
+    .container .input_grp textarea{
+        width: 30vw;
     }
 }
 
