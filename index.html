@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="nav flex_row sp_even">
             <div class="logo flex_col">
                 <span class:="para1" style="font-size: 1.5em">It's Dipayan</span>
@@ -28,23 +28,40 @@
 
             <div class="nav-items flex_row">
                 <ul class="flex_row space-between">
-                    <li class="nav_ul_items"><a href="#">Home</a></li>
-                    <li class="nav_ul_items"><a href="#">About Us</a></li>
+                    <li class="nav_ul_items"><a href="#header">Home</a></li>
+                    <li class="nav_ul_items"><a href="#about">About</a></li>
                     <li class="nav_ul_items"><a href="#">Projects</a></li>
-                    <li class="nav_ul_items"><a href="#">Contact Us</a></li>
+                    <li class="nav_ul_items"><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <main>
         <div id="section1">
-            <img src="./images/dp.png" >
+            <img src="./images/dp.png">
             <p class="intro">Hii developers this is<span id="name">Dipayan</span><br>
                 I am a <span id="typedjs"></span>
             </p>
         </div>
         <div class="hr"></div>
-        <div id="section2"></div>
+        <div id="about" class="flex_row center">
+            <div class="mask">
+                <div class="photo"><img src="/images/dp.png" alt=""></div>
+                <div class="bio">
+                    <h3>About</h3>
+                    <p>I'm Dipayan Dey, a Computer Science Engineering student at AOT, passionate about turning ideas into
+                        elegant digital experiences.<br>
+                        Driven by curiosity and rooted in discipline, I believe in staying aligned with the ever-evolving trends
+                        of the tech world, embracing change as a constant. Yet in personal life, I hold a deep respect for
+                        tradition and the wisdom of those who came before us — especially the values and thought processes of
+                        our elders. It's a balance of progress and perspective that shapes who I am.<br>
+                        My work reflects this duality — modern in execution, grounded in principle. This portfolio is a glimpse
+                        into that journey, blending innovation with intention.
+                    </p>
+                </div>
+
+            </div>
+        </div>
         <div id="contact" class=" flex_row center">
             <div class="container flex_col">
                 <div class="input_grp  rel">
@@ -69,7 +86,7 @@
             <img src="images/contact.png" alt="">
         </div>
     </main>
-    
+
     <footer>
         <div class="footer">
             <div class="footer_section">

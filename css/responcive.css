@@ -89,7 +89,7 @@
         aspect-ratio: 1/1;
     }
 
-    #section1{
+    #section1 {
         margin: 50px 0px;
         display: flex;
         align-items: center;
@@ -109,51 +109,109 @@
 }
 
 @media (min-width:769px) {
-    #section1{
+    #section1 {
         margin: 100px 0px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        
+
     }
+
     .intro {
         font-size: 2rem;
     }
+
     #section1 #name {
         margin-left: 20px;
         font-size: 3rem;
     }
 }
+
+/* ................about portion........... */
+
+@media (max-width:769px) {
+    #about {
+        padding: .5rem .5rem;
+    }
+
+    .mask {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .mask img {
+        height: 13rem;
+        width: 13rem;
+    }
+
+    .bio h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .bio p{
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+
+}
+
+@media (min-width:769px) {
+    #about {
+        padding: 5rem 5rem;
+    }
+
+    .bio h3 {
+        margin-bottom: 2.5rem;
+        text-align: center;
+        font-size: 2rem;
+        color: #00c4ff;
+    }
+    .bio p{
+        letter-spacing: 1px;
+        line-height: 1.7rem;
+    }
+}
+
+
+
 /* --------------contact portion--------------- */
 @media (max-width:769px) {
-    .container .input_grp input{
+    .container .input_grp input {
         /* height: auto; */
-        width:300px;
+        width: 300px;
         outline: none;
     }
-    .container .input_grp textarea{
+
+    .container .input_grp textarea {
         width: 300px;
     }
-    #contact{
+
+    #contact {
         flex-direction: column-reverse;
     }
-    #contact img{
-       
+
+    #contact img {
+
         aspect-ratio: 1/1;
     }
 }
 
 @media (min-width:769px) {
-    .container .input_grp input{
+    .container .input_grp input {
         /* height: auto; */
         width: 30vw;
         outline: none;
     }
-    .container .input_grp textarea{
+
+    .container .input_grp textarea {
         width: 30vw;
     }
-    #contact img{
-        margin-left:12rem;
+
+    #contact img {
+        margin-left: 12rem;
         height: 23rem;
         aspect-ratio: 1/1;
     }
@@ -162,20 +220,22 @@
 
 /* ---------footer portion-------- */
 @media (max-width:769px) {
-    footer{
+    footer {
         padding-top: 50px;
     }
-    .footer_section{
+
+    .footer_section {
         flex-direction: column-reverse;
     }
-    .footer_section .info{
+
+    .footer_section .info {
         padding-top: 55px;
     }
 
 }
 
 @media (min-width:769px) {
-    footer{
-         padding-top: 100px;
+    footer {
+        padding-top: 100px;
     }
 }

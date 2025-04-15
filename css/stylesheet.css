@@ -6,10 +6,13 @@
     color: white;
 
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-* a,li {
+
+* a,
+li {
     text-decoration: none;
     list-style-type: none;
     display: inline-block;
@@ -46,19 +49,27 @@ main .hr {
 }
 
 #section1 {
-    background: linear-gradient(to bottom, rgb(5, 5, 27),rgb(5, 5, 27), transparent);
+    background: linear-gradient(to bottom, rgb(5, 5, 27), rgb(5, 5, 27), transparent);
     margin: 0;
     padding: 100px 0px;
 }
 
-#section1 img:hover {
-    transition: transform 1s ease;
-    transform: scale(1.04);
+#section1 img {
+    animation: tranY 5s ease-in-out infinite;
 }
 
-#section1 img {
-    transition: transform 1s ease-out;
-    /*this is for reverse transition*/
+@keyframes tranY {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .nav-items li a {
@@ -79,16 +90,54 @@ main .hr {
 .nav-items li a:hover::after {
     width: 100%;
 }
+/* -----------------section1 -------------- */
+#name {
+    color: #00c4ff;
+    font-weight: 300;
+}
+
+/* -----------------about section-------------- */
+
+
+.mask{
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+    background-color: #0b0d4454;
+    display: flex;
+    
+}
+.photo img{
+    border: 2px solid #00c4ff;
+    border-radius: 12rem;
+    box-shadow: 0px 0px 17px #00c4ff;
+}
+
+.photo{
+    padding: 1rem;
+    align-self: center;
+    
+}
+
+#about .bio {
+    min-width: 300px;
+    height: auto;
+    padding: 1rem;
+}
+
+
 
 
 /* -----------------contact section-------------- */
-#contact{
+#contact {
     padding: 5rem 0rem;
 }
-.input_grp{
+
+.input_grp {
     padding: 5px 0px;
 }
-#contact .input_grp label{
+
+#contact .input_grp label {
     color: #bab5b5;
     font-size: 13px;
     position: absolute;
@@ -98,75 +147,87 @@ main .hr {
     transition: 0.3s ease;
     pointer-events: none;
 }
-input:focus ~ label,
-input:valid ~ label  {
+
+input:focus~label,
+input:valid~label {
     transform: translateY(-65%);
 }
-textarea:focus ~ label,
-textarea:valid ~ label  {
+
+textarea:focus~label,
+textarea:valid~label {
     transform: translateY(-65%);
 }
-input,textarea{
+
+input,
+textarea {
     background-color: #0e113538;
     border-radius: 4px;
     border: 1px solid #151538;
-    height: 40px; 
+    height: 40px;
     outline: none;
 }
-input{
+
+input {
     padding-left: 12px;
 }
-textarea{
+
+textarea {
     padding: 12px 12px;
 }
 
- /* ---this is for removing up and down btn from input field-- */
+/* ---this is for removing up and down btn from input field-- */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* -----------footer section----- */
 
-footer{
+footer {
     height: max-content;
     width: 100%;
     background-color: rgb(29 29 31);
-   
+
 }
 
-.footer_section{
+.footer_section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.footer_box{
+
+.footer_box {
     height: 300px;
     width: 300px;
-   
+
     display: flex;
     flex-direction: column;
 
 }
-.footer_box img{
+
+.footer_box img {
     position: relative;
-    left:15px;
+    left: 15px;
 }
-.footer_box:first-child img{
+
+.footer_box:first-child img {
     height: 100px;
     width: 100px;
 }
-.footer_icons a{
+
+.footer_icons a {
     padding: 10px;
     font-size: 1.5rem;
 }
+
 .hr_footer {
     height: 1px;
     width: 90%;
     background-color: #7a7878;
     margin: auto;
 }
+
 footer p {
     text-align: center;
     font-size: 0.61rem;
